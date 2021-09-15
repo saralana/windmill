@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="molino/molinos.css">
+<link rel="stylesheet" href="windmill-files/windmill.css">
   <!-- Google fonts-->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
@@ -81,7 +81,7 @@
           
           map.on('load', function () {
             map.loadImage(
-             'molino/molino.png',
+             'windmill-files/windmill.png',
               function(error, image) {
               if (error) throw error;
               map.addImage('molino', image);
@@ -141,57 +141,16 @@
 
         });
       };
-      
-      
+        
     });
-      
-
-      
-      
+       
    // ZOOM
       map.addControl(new mapboxgl.NavigationControl(), 'top-right'); // disable map zoom when using scroll
     //  map.scrollZoom.disable(); 
     
       
-  </script>
-    
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "350px";
-}
+    </script>
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-}
-  
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-
- <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
 
           
 </body>
